@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    $firstnameErr=$lastnameErr=$phoneErr=$emailErr=NULL;
+    $firstname=$lastname=$phone=$email=NULL;
+    $flag=true;
+    if($_SERVER["REQUEST_METHOD"]=="POST")
+    {
+        if(empty($_POST["firstname"]))
+        {
+            $firstnameErr="Required";
+            $flag=false;
+        }
+        else
+        {
+            $firstname=test_input($_POST["firstname"])
+        }
+        if(empty($_POST["lastname"]))
+        {
+            $firstnameErr="Required";
+            $flag=false;
+        }
+        else
+        {
+            $firstname=test_input($_POST["lastname"])
+        }
+        if(empty($_POST["email"]))
+        {
+            $emailErr="Required";
+            $flag=false;
+        }
+        else
+        {
+            $firstname=test_input($_POST["email"])
+        }
+        $country=$_POST["country"];
+        $state=$_POST["state"];
+
+      if($flag)
+      {
+        $conn=new mysqli('localhost',"jashu","jashu@123","college");
+
+        if($conn->connect_error)
+            die("connection failed error: ". $conn->connect_error);
+
+        $sql="INSERT INTO student (firstname, lastname, phone, email, country, state) VALUES
+        ('$firstname','$lastname','$phone','$email','$country','$state')";
+
+        if($conn->query($sql)===TRUE)
+            echo "<script>alert('Data saved successfully')</script>";
+
+      }
+    }
+</body>

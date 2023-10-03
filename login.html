@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUJ Minor Project Portal</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-auth-compat.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <form method="post" id="form" name="myform" onsubmit=return submitForm() action="mainpage.html"></form>
+                <div class="login">
+                    <h3>Sign In</h3>
+                </div>
+                <div class="field_input">
+                    <input type="email" placeholder="Email" name="email" id="email" required>
+                    <span id="emailErr" class="text-danger"></span>
+                </div>
+                <div class="field input">
+                    <input type="password" placeholder="Password" name="password" id="password" required>
+                    <i class="fas fa-eye"></i>
+                    <span id="passErr" class="text-danger"></span>
+                </div>
+                <input type="submit" onclick=location.href="mainpage.html" value="Log In" class="lbtn"></input>  
+                <input type="submit" onclick=location.href="profs_main_page.html" value="Profs Log In" class="lbtn"></input>
+            </form>
+        </div>
+    </div>
+    <video autoplay muted loop>
+        <source src="video.mp4"/>
+    </video>
+    <script src="pass-show-hide.js"></script>
+    <script src="validation.js"></script>
+    <script src="database.js"></script>
+    <script>
+        function validation()
+        {
+            /*var registration_no=document.getElementById('email').value
+            var password=document.getElementById('password').value
+            var emailErr=(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/)
+            var passErr=/^[a-zA-Z0-9!$@*._ ]{8,}$/
+            var un=document.forms["myform"]["registration_no"].value
+            var pw=document.forms["myform"]["password"].value
+            if(registration_noErr.test(registration_no) && passErr.test(password))
+            {
+                if(registration_no=(/^[2][0][9][0-9]{6}$/))
+                {
+                    function logbtn()
+                    {
+                        document.location.href="mainpage.html"
+                    }
+                }
+                else if(registration_noErr=/^[f][0-9]{4}$/)
+                {
+                    function proflogbtn()
+                    {
+                        document.location.href="profs_mainpage.html"
+                    }
+                }
+            }
+            var reg=registration_noErr.test(registration_no)
+            var pas=passErr.test(password)
+            if(un=="209301136")
+            {
+                if(pw="Jashu@26")
+                {
+                    window.location.href="mainpage.html"
+                }
+            }*/
+        }
+        function logbtn()
+        {
+            var un=document.forms["myform"]["email"].value
+            var pw=document.forms["myform"]["password"].value
+            if(un=="abc@gmail.com" && pw=="Jashu@26")
+            {
+                    window.location.href="mainpage.html"
+            }
+            else
+                alert("Inavlid username")
+                return false
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <script src="index.js"></script>
+</head>
+<body>
+  <button class="tablink" onclick="openPage('CSE', this, 'gray')" id="defaultOpen">CSE</button>
+  <button class="tablink" onclick="openPage('IT', this, 'gray')" >IT</button>
+  <button class="tablink" onclick="openPage('CCE', this, 'gray')">CCE</button>
+  <button class="tablink" onclick="openPage('ECE', this, 'gray')">ECE</button>
+  <button class="tablink" onclick="openPage('EEE', this, 'gray')" >EEE</button>
+  <button class="tablink" onclick="openPage('Mechanical', this, 'gray')">Mechanical</button>
+  <button class="tablink" onclick="openPage('Civil', this, 'gray')">Civil</button>
+  <button class="tablink" onclick="openPage('Chemical', this, 'gray')" >Chemical</button>
+  <button class="tablink" onclick="openPage('Mechatronics', this, 'gray')">Mechatronics</button>
+  <button class="tablink" onclick="location.href = 'login.html'">Sign Out</button>
+
+  <div id="CSE" class="tabcontent">
+    <div id="heading_cse"><h1>CSE</h1></div>
+    <table class="customers">
+        <tr><th>S.No</th><th>Professor Name</th><th>Specialist in</th><th>Projects</th><th>Max Slots</th><th>Slots Left</th><th>Apply</th></tr>
+        <tr><td>1</td><td>Dr. Rishav Dubey</td><td>Cryptography & Web Dev</td><td><input type="button" value="Projects" class="proj_btn" onclick=location.href="proj_cse_1.html"></td><td>10</td><td><p><a id="click1">8</a></p></td><td><input type="button" onclick="clicks1()" value="Apply" class="proj_btn"></td></tr>
+        <tr><td>2</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><input type="button" value="Projects" class="proj_btn" onclick=location.href="proj_cse_1.html"></td><td>10</td><td><p><a id="click2">8</a></p></td><td><input type="button" onclick="clicks2()" value="Apply" class="proj_btn"></td></tr>
+        <tr><td>3</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><input type="button" value="Projects" class="proj_btn" onclick=location.href="proj_cse_1.html"></td><td>10</td><td><p><a id="click3">8</a></p></td><td><input type="button" onclick="clicks3()" value="Apply" class="proj_btn"></td></tr>
+        <tr><td>4</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><input type="button" value="Projects" class="proj_btn" onclick=location.href="proj_cse_1.html"></td><td>10</td><td><p><a id="click4">8</a></p></td><td><input type="button" onclick="clicks4()" value="Apply" class="proj_btn"></td></tr>
+        <tr><td>5</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><input type="button" value="Projects" class="proj_btn" onclick=location.href="proj_cse_1.html"></td><td>10</td><td><p><a id="click5">8</a></p></td><td><input type="button" onclick="clicks5()" value="Apply" class="proj_btn"></td></tr>
+        <tr><td>6</td><td>Dr. Harish Sharma</td><td>AI,ML</td><td><input type="button" value="Projects" class="proj_btn" onclick=location.href="proj_cse_1.html"></td><td>10</td><td><p><a id="click6">8</a></p></td><td><input type="button" onclick="clicks6()" value="Apply" class="proj_btn"></td></tr>
+        <tr><td>7</td><td>Dr. Neetu Gupta</td><td>AI</td><td><input type="button" value="Projects" class="proj_btn" onclick=location.href="proj_cse_1.html"></td><td>10</td><td><p><a id="click7">8</a></p></td><td><input type="button" onclick="clicks7()" value="Apply" class="proj_btn"></td></tr>
+        <tr><td>8</td><td>Dr. Vibha Jain</td><td>MERN</td><td><input type="button" value="Projects" class="proj_btn" onclick=location.href="proj_cse_1.html"></td><td>10</td><td><p><a id="click8">8</a></p></td><td><input type="button" onclick="clicks8()" value="Apply" class="proj_btn"></td></tr>
+        <tr><td>9</td><td>Dr. Ashish Kumar</td><td>App Dev</td><td><input type="button" value="Projects" class="proj_btn" onclick=location.href="proj_cse_1.html"></td><td>10</td><td><p><a id="click9">8</a></p></td><td><input type="button" onclick="clicks9()" value="Apply" class="proj_btn"></td></tr>
+        <tr><td>10</td><td>Dr. Manmohan Sharma</td><td>ML</td><td><input type="button" value="Projects" class="proj_btn" onclick=location.href="proj_cse_1.html"></td><td>10</td><td><p><a id="click10">8</a></p></td><td><input type="button" onclick="clicks10()" value="Apply" class="proj_btn"></td></tr>
+      </table>
+  </div>
+
+  <div id="IT" class="tabcontent">
+    <div id="heading_it"><h1>IT</h1></div>
+    <table class="customers_IT">
+        <tr><th>S.No</th><th>Professor Name</th><th>Specialist in</th><th>Projects</th><th>Max Slots</th><th>Slots Left</th><th>Apply</th></tr>
+        <tr><td>1</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>2</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>3</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>4</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>5</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>6</td><td>Dr. Harish Sharma</td><td>AI,ML</td><td><button id="btn_pro_c6">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>7</td><td>Dr. Neetu Gupta</td><td>AI</td><td><button id="btn_pro_c7">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>8</td><td>Dr. Vibha Jain</td><td>MERN</td><td><button id="btn_pro_c8">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>9</td><td>Dr. Ashish Kumar</td><td>App Dev</td><td><button id="btn_pro_c9">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>10</td><td>Dr. Manmohan Sharma</td><td>ML</td><td><button id="btn_pro_c10">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>11</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>12</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>13</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>14</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>15</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+    </table>
+  </div>
+
+  <div id="CCE" class="tabcontent">
+    <div id="heading_cce"><h1>CCE</h1></div>
+    <table class="customers_cce">
+        <tr><th>S.No</th><th>Professor Name</th><th>Specialist in</th><th>Projects</th><th>Max Slots</th><th>Slots Left</th><th>Apply</th></tr>
+        <tr><td>1</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>2</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>3</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>4</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>5</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>6</td><td>Dr. Harish Sharma</td><td>AI,ML</td><td><button id="btn_pro_c6">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>7</td><td>Dr. Neetu Gupta</td><td>AI</td><td><button id="btn_pro_c7">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>8</td><td>Dr. Vibha Jain</td><td>MERN</td><td><button id="btn_pro_c8">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>9</td><td>Dr. Ashish Kumar</td><td>App Dev</td><td><button id="btn_pro_c9">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>10</td><td>Dr. Manmohan Sharma</td><td>ML</td><td><button id="btn_pro_c10">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>11</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>12</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>13</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>14</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>15</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+    </table>
+  </div>
+
+<div id="ECE" class="tabcontent">
+  <div id="heading_ece"><h1>ECE</h1></div>
+    <table class="customers_ece">
+        <tr><th>S.No</th><th>Professor Name</th><th>Specialist in</th><th>Projects</th><th>Max Slots</th><th>Slots Left</th><th>Apply</th></tr>
+        <tr><td>1</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>2</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>3</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>4</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>5</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>6</td><td>Dr. Harish Sharma</td><td>AI,ML</td><td><button id="btn_pro_c6">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>7</td><td>Dr. Neetu Gupta</td><td>AI</td><td><button id="btn_pro_c7">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>8</td><td>Dr. Vibha Jain</td><td>MERN</td><td><button id="btn_pro_c8">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>9</td><td>Dr. Ashish Kumar</td><td>App Dev</td><td><button id="btn_pro_c9">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>10</td><td>Dr. Manmohan Sharma</td><td>ML</td><td><button id="btn_pro_c10">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>11</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>12</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>13</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>14</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>15</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+    </table>
+</div>
+
+<div id="EEE" class="tabcontent">
+  <div id="heading_eee"><h1>EEE</h1></div>
+    <table class="customers_eee">
+        <tr><th>S.No</th><th>Professor Name</th><th>Specialist in</th><th>Projects</th><th>Max Slots</th><th>Slots Left</th><th>Apply</th></tr>
+        <tr><td>1</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>2</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>3</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>4</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>5</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>6</td><td>Dr. Harish Sharma</td><td>AI,ML</td><td><button id="btn_pro_c6">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>7</td><td>Dr. Neetu Gupta</td><td>AI</td><td><button id="btn_pro_c7">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>8</td><td>Dr. Vibha Jain</td><td>MERN</td><td><button id="btn_pro_c8">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>9</td><td>Dr. Ashish Kumar</td><td>App Dev</td><td><button id="btn_pro_c9">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>10</td><td>Dr. Manmohan Sharma</td><td>ML</td><td><button id="btn_pro_c10">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>11</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>12</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>13</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>14</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>15</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+    </table>
+</div>
+
+<div id="Mechanical" class="tabcontent">
+  <div id="heading_mech"><h1>MECHANICAL</h1></div>
+  <table class="customers_mech">
+      <tr><th>S.No</th><th>Professor Name</th><th>Specialist in</th><th>Projects</th><th>Max Slots</th><th>Slots Left</th><th>Apply</th></tr>
+      <tr><td>1</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>2</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>3</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>4</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>5</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>6</td><td>Dr. Harish Sharma</td><td>AI,ML</td><td><button id="btn_pro_c6">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>7</td><td>Dr. Neetu Gupta</td><td>AI</td><td><button id="btn_pro_c7">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>8</td><td>Dr. Vibha Jain</td><td>MERN</td><td><button id="btn_pro_c8">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>9</td><td>Dr. Ashish Kumar</td><td>App Dev</td><td><button id="btn_pro_c9">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>10</td><td>Dr. Manmohan Sharma</td><td>ML</td><td><button id="btn_pro_c10">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>11</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>12</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>13</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>14</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>15</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+  </table>
+</div>
+
+<div id="Civil" class="tabcontent">
+  <div id="heading_civil"><h1>CIVIL</h1></div>
+    <table class="customers_civil">
+        <tr><th>S.No</th><th>Professor Name</th><th>Specialist in</th><th>Projects</th><th>Max Slots</th><th>Slots Left</th><th>Apply</th></tr>
+        <tr><td>1</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>2</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>3</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>4</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>5</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>6</td><td>Dr. Harish Sharma</td><td>AI,ML</td><td><button id="btn_pro_c6">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>7</td><td>Dr. Neetu Gupta</td><td>AI</td><td><button id="btn_pro_c7">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>8</td><td>Dr. Vibha Jain</td><td>MERN</td><td><button id="btn_pro_c8">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>9</td><td>Dr. Ashish Kumar</td><td>App Dev</td><td><button id="btn_pro_c9">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>10</td><td>Dr. Manmohan Sharma</td><td>ML</td><td><button id="btn_pro_c10">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>11</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>12</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>13</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>14</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>15</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+    </table>
+</div>
+
+<div id="Chemical" class="tabcontent">
+  <div id="heading_che"><h1>CHEMICAL</h1></div>
+  <table class="customers_che">
+      <tr><th>S.No</th><th>Professor Name</th><th>Specialist in</th><th>Projects</th><th>Max Slots</th><th>Slots Left</th><th>Apply</th></tr>
+      <tr><td>1</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>2</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>3</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>4</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>5</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>6</td><td>Dr. Harish Sharma</td><td>AI,ML</td><td><button id="btn_pro_c6">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>7</td><td>Dr. Neetu Gupta</td><td>AI</td><td><button id="btn_pro_c7">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>8</td><td>Dr. Vibha Jain</td><td>MERN</td><td><button id="btn_pro_c8">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>9</td><td>Dr. Ashish Kumar</td><td>App Dev</td><td><button id="btn_pro_c9">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>10</td><td>Dr. Manmohan Sharma</td><td>ML</td><td><button id="btn_pro_c10">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>11</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>12</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>13</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>14</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+      <tr><td>15</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+  </table>
+</div>
+
+<div id="Mechatronics" class="tabcontent">
+  <div id="heading_tronics"><h1>MECHATRONICS</h1></div>
+    <table class="customers_tronics">
+        <tr><th>S.No</th><th>Professor Name</th><th>Specialist in</th><th>Projects</th><th>Max Slots</th><th>Slots Left</th><th>Apply</th></tr>
+        <tr><td>1</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>2</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>3</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>4</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>5</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>6</td><td>Dr. Harish Sharma</td><td>AI,ML</td><td><button id="btn_pro_c6">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>7</td><td>Dr. Neetu Gupta</td><td>AI</td><td><button id="btn_pro_c7">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>8</td><td>Dr. Vibha Jain</td><td>MERN</td><td><button id="btn_pro_c8">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>9</td><td>Dr. Ashish Kumar</td><td>App Dev</td><td><button id="btn_pro_c9">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>10</td><td>Dr. Manmohan Sharma</td><td>ML</td><td><button id="btn_pro_c10">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>11</td><td>Dr. Vineetha Soni</td><td>Cryptography & Web Dev</td><td><button id="btn_pro_c1">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>12</td><td>Dr. Sandeep Chaurasia</td><td>ML,DL</td><td><button id="btn_pro_c2">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>13</td><td>Dr. Neha Chowdary</td><td>ML,DL</td><td><button id="btn_pro_c3">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>14</td><td>Dr. Umashankar Rawat</td><td>Cryptography</td><td><button id="btn_pro_C4">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+        <tr><td>15</td><td>Dr. Satyabrata Roy</td><td>Cryptography</td><td><button id="btn_pro_c5">Projects</button></td><td>10</td><td>5</td><td><button class="btn_1">Apply</button></td></tr>
+    </table>
+</div>
+
+<div id="logout">
+</div>
+
+<script type="text/javascript">
+function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

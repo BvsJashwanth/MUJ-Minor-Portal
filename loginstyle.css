@@ -1,0 +1,265 @@
+video
+{
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    height: -webkit-fill-available
+}
+.container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login-form
+{
+    height: 310px;
+    width: 270px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    color: #fff;
+    padding-top: 60px;
+}
+.login h3
+{
+    letter-spacing: 1px;
+}
+input
+{
+    width: 175px;
+    margin-top: 20px;
+    background: transparent;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 30px;
+    box-shadow: 0 0 4px #fff;
+    transition: box-shadow 0.5s ease;
+}
+.btn
+{
+    padding: 5px 20px;
+    margin-top: 16px;
+    background: transparent;
+    border-radius: 25px;
+    box-shadow: 0 0 4px #fff ;
+    cursor: pointer;
+}
+.logbtn
+{
+  width: 100px;
+}
+.lbtn
+{
+  width: 90px;
+  padding: 1%;
+}
+.sub
+{
+  width: 200px;
+}
+input[placeholder]:focus
+{
+  color:#fff;
+}
+input:focus,
+.btn:hover
+{
+  box-shadow: 0 0 10px #fff;
+}
+#heading_cse
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aqua;
+}
+#heading_it
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lightpink;
+}
+#heading_cce
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aqua;
+}
+#heading_ece
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lightpink;
+}
+#heading_eee
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aqua;
+}
+#heading_mech
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lightpink;
+}
+#heading_civil
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aqua;
+}
+#heading_che
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lightpink;
+}
+#heading_tronics
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aqua;
+}
+#heading_agri
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lightpink;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: black;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 10%;
+}
+
+.tablink:hover {
+  background-color: black;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#CSE{background-color: gray;}
+#IT{background-color: gray;}
+#CCE{background-color:gray;}
+#ECE{background-color: gray;}
+#EEE{background-color: gray;}
+#Mechanical{background-color: gray;}
+#Civil{background-color:gray;}
+#Chemical{background-color: gray;}
+#Mechatronics{background-color: gray;}
+#Agricultural{background-color: gray;}
+
+.customers{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .customers td, .customers th{
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  .customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .customers tr:hover {background-color: lightgray;}
+  
+  .customers th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: aqua;
+    color: black;
+  }
+  .customers_IT{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .customers_IT td, .customers_IT th{
+    border: 1px solid black;
+    padding: 8px;
+  }
+  .customers_IT tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .customers_IT tr:hover {background-color: lightgray;}
+  .customers_IT th
+  {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: pink;
+    color: black;
+  }
+  .proj_btn
+  {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    width: 75px;
+  }
+  .login-form form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .login-form form .field input{
+    outline: none;
+  }
+  .login-form form .field i{
+    position: absolute;
+    right: 15px;
+    top: 70%;
+    color: #ccc;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+  .login-form .field i.active::before{
+    color: #333;
+    content: "\f070";
+  }
+  .field_input
+  {
+    width: 215px;
+  }
+
